@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange</title>
+  
+    <link rel="stylesheet" href="./style.css" type="text/css" >
+</head>
+<body>
+<section class="bg-color">
+    <div class="main-container">
+        <div class="img-container">
+            <img class="pattern-img" src="./bg-pattern-desktop.svg" alt="">
+            <img class="woman-img" src="./illustration-woman-online-desktop.svg" alt="">
+        </div>  
+        <div class="content">
+            <h1>FAQ</h1>
+            <div>
+                <p onclick="myFunction()"class="content-para">How many team members can i invite? 
+                </p>
+                <p id="myDropdown" class="dropdown-content">No more than 2GB.All files in your account must</p>
+                <img class="arrow-down" src="./icon-arrow-down.svg" alt="">
+            </div>
+            <hr class="border-line">
+            <div>
+                <p onclick="myFunction()"class="content-para">What is the maximum file upload size?</p>
+                <p id="myDropdown" class="dropdown-content">No more than 2GB.All files in your account must</p>
+                <img class="arrow-down" src="./icon-arrow-down.svg" alt="">
+            </div>
+            <hr class="border-line">
+            <p class="content-para">How do i reset my password? 
+            </p>
+            <img class="arrow-down" src="./icon-arrow-down.svg" alt="">
+            <hr class="border-line">
+            <p class="content-para">Can i cancel my subcription? </p>
+            <img class="arrow-down" src="./icon-arrow-down.svg" alt="">
+            <hr class="border-line">
+            <p class="content-para">Do you provide additional support? </p>
+            <img class="arrow-down" src="./icon-arrow-down.svg" alt="">    
+            <hr class="border-line">
+        </div>
+    </div>
+    <img class="box-img" src="./illustration-box-desktop.svg" alt="">
+
+</section>
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+.bg-color{
+    background-image: linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    height: 100vh;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #ffffff;
+    width: 70vw;
+    height:70vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    position: relative;
+    top: 110px;
+    overflow: hidden;
+    padding-right: 10%;
+   
+   
+}
+.img-container{
+    max-width: 50%;
+}
+.pattern-img{
+    width: 300%;
+    margin-top: -17em;
+    margin-left:-345px;
+}
+.woman-img{
+    position: absolute;
+    width:580px;
+    top:15px;
+    left:-100px;
+}
+.box-img{
+    position:relative;
+    top:-245px;
+    left: 120px;   
+}
+.content{
+    min-width: 50%;
+    position: relative;
+}
+h1{
+    margin-top: 1.5em;
+    font-size: 4em;
+}
+.content-para{
+    font-size: 1.1em;
+    line-height: 30px;
+    letter-spacing: 1px;
+    min-width: 370px;
+    color: hsl(237, 12%, 33%);
+    transition: .2s;
+}
+.arrow-down{
+    position: absolute;
+    right:4px;
+    margin-top: -25px;
+
+    
+}
+.border-line{
+    border:1px solid hsl(240, 5%, 91%);
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #fff;
+    min-width: 160px;
+    height: 20px;
+    overflow: auto;
+    z-index: 1;
+}
+.show 
+{
+    display: block;
+}
+.content-para:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+@media only screen and (max-width: 400px) {
+    .main-container{
+        width: 90vw;
+        height: 70vh;
+        display: block;
+        overflow: visible;
+        padding:0 5%;
+    }
+    .pattern-img{
+        width:0px;
+        visibility: hidden;
+    }
+    .woman-img{
+        position: absolute;
+        width: 200px;
+        top: -100px;
+        right: 0px;
+        left: 50px;
+    }
+    .box-img{
+        width: 100px;
+        top:-460px;
+        left: 50px;
+
+    }
+    h1{
+        text-align: center;
+    }
+
+
+}
